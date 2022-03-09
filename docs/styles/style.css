@@ -27,3 +27,75 @@ a:hover{
     color:white;
     padding: 5px 12px;
 }
+.navresponsivefix__ i{
+    display: none;
+}
+.navresponsive__{
+    display: none;
+}
+@media (max-width:700px){
+    *{
+        margin:0;
+    }
+    .nav__{
+        display: none;
+    }
+    .navresponsivefix__{
+        border-bottom: 2px solid rgb(69, 129, 149);
+        background-color: rgb(89, 168, 194);
+        position: sticky;
+        top:0px;
+    }
+
+    .navresponsivefix__ i{
+        display:inline-block;
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+        width: 10vw;
+        height: 30px;
+        margin-left: 85%;
+        margin-top: 8px;
+    }
+
+    .navresponsive__{
+        position: fixed;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        padding: 10px;
+        font-size: 1.5em;
+        background-color:rgb(89, 168, 194);
+        z-index: 1;
+        transition: all 1s;
+    }
+    .navresponsive__ nav{
+        margin:0;
+    }
+    .navresponsive__ ul{
+        display: inline;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navresponsive__ li, a{
+        z-index: 1;
+        list-style: none;
+        padding: 40px;
+        color: white;
+    }
+    .navresponsive__ li a:hover{
+        z-index: 1;
+        list-style: none;
+        margin: 40px;
+        color: rgb(89, 168, 194);
+        background-color: white;
+        border-radius: 5px;
+    }
+    .navresponsive__Open{
+        display: block;
+        transition: all 1s;
+    }
+}

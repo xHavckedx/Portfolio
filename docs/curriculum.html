@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Leo Gómez Cano</title>
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-13kQ6JoOhlxACx6X27kQsASg0FJDIMOdig62C9zdIQGihvqVUYItWNNe0tpO2Q7dppx1xQx/zULU9MQ4Y5Zi/A=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/light-d77910e89a0e865c400b.css">
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-q7VXJmlwU5JptLMrpjBkgwDwAcyytmc+xYAWW2xtKLvOGnJUg8O1uIT5ss7VIUYJPaZIe8IGskuy7ASsHlXHZQ=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/dark-abb557266970539269b4.css">
+    <link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all"
+        integrity="sha512-EMiKxWwCHOvlm8CmlBlUxzofn/C8PygNh8S6cgUnreWdAm1Ks0hh3380+dxkkGhqjmkqLFZsdAOCNjKfCothoQ=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-10c88ac56c021cebe59b.css">
+    <link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all"
+        integrity="sha512-h2jOArfHzWjgFOS7rPPffkZ3ORa+Nxp+ffwoFGKQppC98Arz3k0hzirE0l1CnNFjBPeSMnzGHgYPMCvKMfskqQ=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-8768ce02b7c7cd68e014.css">
+    <link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all"
+        integrity="sha512-QzzK7cvZ2Dx98wnz52iQVqgJ7zKVkz58VE5wlxe6Oo3fTyDnE/oQwKypmQBTuVnQGbZ2GkW8zV3VcnKFYTWiCw=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-433ccaedcbd9d83c7df3.css">
+    <link data-color-theme="light_colorblind" crossorigin="anonymous" media="all"
+        integrity="sha512-6MPvWJVREvzKDZMn6etrs6WBVz1hTVklms2SpohtcEkpDETv62euIIWXO0QzydgOnRNQ7lIWpsgWITIQBFT4RA=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-e8c3ef58955112fcca0d.css">
+    <link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all"
+        integrity="sha512-WxG2Ho2uGbuMZ98q/MmS5Gf3OJlmPNdVswDN3eX7lYeLrVAVXYG93BhnYZoXGbyhvM295glpF31EycKL0Ui82A=="
+        rel="stylesheet"
+        data-href="https://github.githubassets.com/assets/light_high_contrast-5b11b61e8dae19bb8c67.css">
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-4dk15gB0uXYpDwjTMN0+Qau/kysFVwNizg3Z5RKA+naQVQpZMqVMOueIPFSlPsNi7J3DVEjhXrwDyZT8ZZF8Bg=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-e1d935e60074b976290f.css">
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-3tDXyOLHHganRGASNnl2hxGw8qSd6oce8C27uP7cOgAoeazoEkRRiuINi3MNL7Hq/Z/bVBBuNDJscEKLlkgFHg=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-ded0d7c8e2c71e06a744.css">
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-hpIrfz2pWwa7eGZ5dC5vHGZ25lJj1iVSVx6xl6yyaGBCYJ5jsX2myq3ToniMuK4eHVL6iw/fKHj++Cg/hdB0JA=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/tab-size-fix-86922b7f3da95b06bb78.css">
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-THZEEZK6pzKHWG9MwdLgn9RzpAIvqrRR5kXPWSlYItzJmwM9HsN0EcYWE9t5HPijO1zNY/BnxwJU0v3aVqSwqQ=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/github-4c76441192baa7328758.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+            }
+    
+            body {
+                background-image: url(https://images3.alphacoders.com/954/thumb-1920-954241.jpg);
+                background-color: rgba(0, 0, 0, 0.965);
+                background-size: cover;
+                background-position: center;
+            }
+            
+            .AllPage__header {
+                background-color: black;
+                min-width: 100vw;
+                gap: 40px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 1000px;
+                flex:1;
+            }
+    
+            .AllPage {
+                display: block;
+                width: 980px;
+                height: 1100px;
+                color: white;
+                margin: auto;
+                opacity: 1;
+                z-index: -1;
+            }
+    
+            .AllPage__img img {
+                border: 10px ridge rgb(66, 63, 63);
+                border-radius: 100%;
+                display: inline-block;
+                overflow: hidden;
+                color: rgba(0, 0, 0, 0.63);
+                object-fit: cover;
+                width: 200px;
+                height: 200px;
+                margin: 1vw;
+                z-index: 101;
+            }
+    
+            .AllPage__chat {
+    
+                display: inline-block;
+                background-color: white;
+                color: black;
+                width: 17em;
+                height: 2em;
+                border-radius: 50px 50px 50px 0px;
+                font-size: x-large;
+                padding: 0.2em 2em 0 2em;
+            }
+    
+            .AllPage__body {
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.534);
+                margin: 0;
+                margin-top: 20px;
+                justify-content: center;
+                border: 1px solid black;
+                width: 100%;
+                height: 1100px;
+                padding: 10px 0 0 0;
+                font-size: larger;
+            }
+            .AllPage__body p{
+                margin-bottom: 20px;
+            }
+            .Box.mb-3{
+                margin:0 auto;
+                width: 80%;
+            }
+            .AllPageBot{
+                margin-top: 25px;
+                background-color: black;
+                width: 100%;
+            }
+            .AllPageBot__footer{
+                padding: 5px;
+                color:white;
+                margin: auto;
+                display: flex;
+                flex-direction:row;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+                margin-top:24px;
+                width: 980px;
+            }
+            p{
+                display: inline-block;
+                text-align: center;
+                margin:0;
+            }
+            .disclaimer{
+                display: none;
+            }
+    
+            @media all and (max-width: 650px) {
+                *{
+                    margin:0;
+                }
+                .AllPageBot{
+                    margin:0;
+                }
+                .AllPageBot__footer {
+                font-size: 15px;
+                width: 90%;
+                }
+                .AllPage__header{
+                    min-width: 0px;
+                    height: 200px;
+                    width: 100%;
+                    margin:0 auto;
+                    margin-bottom: 10px;
+                    justify-content: left;
+                    gap:10px;
+                }
+                .AllPage__img img{
+                    height: 150px;
+                    width: 150px;
+                    margin-left:25px;
+                }
+                .AllPage__chat{
+                    font-size: 13px;
+                    height: 4em;
+                    width: 14em;
+                    margin:0 auto;
+                }
+                .AllPage__body{
+                    margin: 0 auto;
+                    height: 95%;
+                    width: 100%;
+                }
+                .AllPage{
+                    height: 100%;
+                    width: 95%;
+                }
+                .Box.mb-3{
+                    width: 100%;
+                    height: 100%;
+                    font-size: 10px;
+                }
+                .AllPage p{
+                    font-size: 20px;
+                }
+                .js-details-container.Details.open.Details--on{
+                    display: flex;
+                    padding: 10px;
+                    width: 100%;
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <div class="AllPage__header">
+        <div class="AllPage__img">
+            <img src="\yo_definitivo.jpg">
+        </div>
+        <div class="AllPage__chat">
+            <p>!Bienvenido a mi portfolio!</p>
+        </div>
+    </div>
+    <div class="AllPage">
+        <div class="AllPage__body">
+            <p>He creado este sencillo portfolio, para corroborar mi experiencia como programador.</p>
+            <div class="Box mb-3">
+                <div class="Box-header position-relative">
+                  <h2 class="sr-only">Latest commit</h2>
+                  <div class="js-details-container Details d-flex rounded-top-2 flex-items-center flex-wrap" data-issue-and-pr-hovercards-enabled="">
+                    
+              
+                <div class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1 hx_avatar_stack_commit">
+                  
+              <div class="AvatarStack flex-self-start  ">
+                <div class="AvatarStack-body" aria-label="xHavckedx">
+                    <a class="avatar avatar-user" style="width:24px;height:24px;" data-skip-pjax="true" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/xHavckedx/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self"  target="_blank" href="https://github.com/xHavckedx">
+                      <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/65540386?s=48&amp;v=4" width="24" height="24" alt="@xHavckedx" class=" avatar-user">
+              </a>  </div>
+              </div>
+              
+                </div>
+                <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
+                  <div class="css-truncate css-truncate-overflow color-fg-muted">
+                        <a class="commit-author user-mention" title="View all commits by xHavckedx"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commits?author=xHavckedx">xHavckedx</a>
+                  
+                
+              
+                      <span class="d-none d-sm-inline">
+                        <a data-pjax="true" data-test-selector="commit-tease-commit-message" title="WebScrapping" class="Link--primary markdown-title"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/6d040986baab2950934ba44fefc00a080cb3c3ac">WebScrapping</a>
+                      </span>
+                  </div>
+                  <span class="hidden-text-expander ml-2 d-inline-block d-inline-block d-lg-none">
+                    <button type="button" class="color-fg-default ellipsis-expander js-details-target" aria-expanded="false">
+                      …
+                    </button>
+                  </span>
+                  <div class="d-flex flex-auto flex-justify-end ml-3 flex-items-baseline">
+                      
+                    <a  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/6d040986baab2950934ba44fefc00a080cb3c3ac" class="f6 Link--secondary text-mono ml-2 d-none d-lg-inline" data-pjax="#repo-content-pjax-container">
+                      6d04098
+                    </a>
+                    <a  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/6d040986baab2950934ba44fefc00a080cb3c3ac" class="Link--secondary ml-2" data-pjax="#repo-content-pjax-container">
+                      <relative-time datetime="2021-12-19T01:25:09Z" class="no-wrap" title="19 dic 2021, 2:25 CET">on 19 Dec 2021</relative-time>
+                    </a>
+                  </div>
+                </div>
+                <div class="pl-0 pl-md-5 flex-order-1 width-full Details-content--hidden">
+                    <div class="mt-2">
+                      <a data-pjax="#repo-content-pjax-container" data-test-selector="commit-tease-commit-message" class="Link--primary text-bold"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/6d040986baab2950934ba44fefc00a080cb3c3ac">WebScrapping</a>
+                    </div>
+                  <div class="d-flex flex-items-center">
+                    <code class="border d-lg-none mt-2 px-1 rounded-2">6d04098</code>
+                  </div>
+                </div>
+                    <div class="flex-shrink-0">
+                      <h2 class="sr-only">Git stats</h2>
+                      <ul class="list-style-none d-flex">
+                        <li class="ml-0 ml-md-3">
+                          <a data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commits/master" class="pl-3 pr-3 py-3 p-md-0 mt-n3 mb-n3 mr-n3 m-md-0 Link--primary no-underline no-wrap">
+                            <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-history">
+                  <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path>
+              </svg>
+                            <span class="d-none d-sm-inline">
+                                  <strong>29</strong>
+                                  <span aria-label="Commits on master" class="color-fg-muted d-none d-lg-inline">
+                                    commits
+                                  </span>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                  <h2 id="files" class="sr-only">Files</h2>
+                  
+              
+              
+                
+              
+              
+                  <a class="d-none js-permalink-shortcut" data-hotkey="y"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/6d040986baab2950934ba44fefc00a080cb3c3ac">Permalink</a>
+              
+                <div data-view-component="true" class="include-fragment-error flash flash-error flash-full py-2">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+                  <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+              </svg>
+                
+                  Failed to load latest commit information.
+              
+              
+                
+              </div>  <div class="js-details-container Details open Details--on">
+                  <div role="grid" aria-labelledby="files" class="Details-content--hidden-not-important js-navigation-container js-active-navigation-container d-md-block" data-pjax="">
+                    <div class="sr-only" role="row">
+                      <div role="columnheader">Type</div>
+                      <div role="columnheader">Name</div>
+                      <div role="columnheader" class="d-none d-md-block">Latest commit message</div>
+                      <div role="columnheader">Commit time</div>
+                    </div>
+              
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="BaseDeDatos" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/BaseDeDatos">BaseDeDatos</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/1e59964ae90492ea9c92b8e42c0f60ff6ed9ea2a">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:18:41Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:18 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="CalculadoraTextual" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/CalculadoraTextual">CalculadoraTextual</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/4f048ca245e40902808f70b5ce7c03bc64c07add">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:19:06Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:19 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="ConcesionarioPOO_Java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/ConcesionarioPOO_Java">ConcesionarioPOO_Java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/f550ee21c335cd55516c84f05bc731d1ae2604b3">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:19:16Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:19 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="EE5_Java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/EE5_Java">EE5_Java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/fcbf5a150fee5414751f33ffce4bece3d7ab3cf1">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:20:12Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:20 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="EditorTextual" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/EditorTextual">EditorTextual</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/8cd7930d32d88d1116e757f81be8e3ae5cd56d1c">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:19:29Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:19 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item navigation-focus">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="MATERIALCONTS" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/MATERIALCONTS">MATERIALCONTS</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/79ecfbadad5fec38122cba9755d9ffc20a98e86f">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:20:41Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:20 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="Reto1_UF1_Java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/Reto1_UF1_Java">Reto1_UF1_Java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/a9247582cd5233474a5541cc6c23ffc7429837c3">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:20:52Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:20 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="Reto1_UF2_Java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/Reto1_UF2_Java">Reto1_UF2_Java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/e59be23e39590fcee3a3b0e459ae355b98120ee4">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:21:02Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:21 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="Reto1_UF3_Java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/Reto1_UF3_Java">Reto1_UF3_Java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/1881d94c7b559eb0f3d09ea31e77cb9d49775369">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:21:10Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:21 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="Reto1_UF4_Java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/Reto1_UF4_Java">Reto1_UF4_Java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/a7bce170c6af101d97ae6313458642280ac697b9">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:21:18Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:21 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="Reto1_UF5_Java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/Reto1_UF5_Java">Reto1_UF5_Java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/0318fa3c5900dc547ed701da49d85182fe40d31d">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:21:25Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:21 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="Reto2_UF1_Java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/Reto2_UF1_Java">Reto2_UF1_Java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/743e380ce45c1480d59ad5f77eebd198c38109dc">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:21:33Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:21 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="Reto2_UF2_Java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/Reto2_UF2_Java">Reto2_UF2_Java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/0ccd2648223026505d1f5d4f70c5238e37d0b42b">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:21:40Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:21 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="Reto2_UF4_Java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/Reto2_UF4_Java">Reto2_UF4_Java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/e62c0849149c0da28fc658d6e7afb70debb253bc">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:21:52Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:21 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/calculadora/src/calculadora"><span class="color-fg-muted">calculadora/src/</span>calculadora</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Add files via upload" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/221d00c6130160feccb1615d381b2d280d974666">Add files via upload</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:18:48Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:18 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="chromedriver" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/chromedriver">chromedriver</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="WebScrapping" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/6d040986baab2950934ba44fefc00a080cb3c3ac">WebScrapping</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:25:09Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:25 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory hx_color-icon-directory">
+                  <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/tree/master/java">java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="WebScrapping" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/6d040986baab2950934ba44fefc00a080cb3c3ac">WebScrapping</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:25:09Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:25 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+                  <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="CalculadoraEnteros.java" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/blob/master/CalculadoraEnteros.java">CalculadoraEnteros.java</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Update CalculadoraEnteros
+              
+              Aclaración de las variables, mejora de la tabulación y estructura." class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/a07804e92d6a2edae2b01309462b8f09db536c0d">Update CalculadoraEnteros</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2020-05-24T15:38:34Z" data-view-component="true" class="no-wrap" title="24 may 2020, 17:38 CEST">2 years ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+                  <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="Recolector" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/blob/master/Recolector">Recolector</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Create Recolector" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/afacb9413a0f9b833982e6c9463446d60b62c05b">Create Recolector</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2020-09-17T23:20:40Z" data-view-component="true" class="no-wrap" title="18 sept 2020, 1:20 CEST">2 years ago</time-ago>
+                        </div>
+              
+                      </div>
+                      <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+                        <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+                            <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+                  <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+              </svg>
+                        </div>
+              
+                        <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+                          <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="quitaADBlocks.bat" data-pjax="#repo-content-pjax-container"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/blob/master/quitaADBlocks.bat">quitaADBlocks.bat</a></span>
+                        </div>
+              
+                        <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+                            <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                                  <a data-pjax="true" title="Remove antiadblocks" class="Link--secondary"  target="_blank" href="https://github.com/xHavckedx/LaboratorioDeProgramas/commit/ff6aa332522c38fcf90c6f544970ca57a9c88c07">Remove antiadblocks</a>
+                            </span>
+                        </div>
+              
+                        <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+                            <time-ago datetime="2021-12-19T01:12:51Z" data-view-component="true" class="no-wrap" title="19 dic 2021, 2:12 CET">3 months ago</time-ago>
+                        </div>
+              
+                      </div>
+                  </div>
+                  <div class="Details-content--shown Box-footer d-md-none p-0">
+                    <button aria-expanded="true" type="button" data-view-component="true" class="js-details-target btn-link d-block width-full px-3 py-2">  View code
+              </button>    </div>
+                </div>
+              
+              
+              
+              
+              
+              
+              </div>
+            </div>
+            </div>
+            <div class="AllPageBot"> 
+                <div class="AllPageBot__footer"><p>Gracias por visitar la página web</p><p>©Leo Gómez Cano</p></div>
+            </div>
+</body>
+
+</html>

@@ -3,11 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfolio Leo Gómez Cano</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/docs/javascript/app.js"></script>
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/acercademi.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2ac5134df5.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="nav__">
@@ -20,15 +23,28 @@
                 </ul>
             </nav>
         </div>
+        <div class="navresponsivefix__">
+                <i id="navresponsive__ico" class="fa-solid fa-bars" onclick="abrirMenu()"></i>
+        </div>
+        <div id="navresponsive__" class="navresponsive__">
+            <nav>
+                <ul>
+                    <li onclick="cerrarMenu()"><a href="#acercademi">Acerca de mi</a></li>
+                    <li onclick="cerrarMenu()"><a href="#">Habilidades</a></li>
+                    <li onclick="cerrarMenu()"><a href="#">Currículum</a></li>
+                    <li onclick="cerrarMenu()"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
         
         <div class="intro__">
             <p>Me llamo</p>
             <h1>Leo Gómez Cano </h1>
             <p>Y soy programador</p>  
         </div>
-        <div class="acercade__">
+        <div class="acercade__" id="acercademi">
             <div class="acercade__acercademi">Acerca de mi</div>
-            <div class="acercade__contenido" id="acercademi"><p>
+            <div class="acercade__contenido"><p>
                 Soy una persona ambiciosa, analítica, muy autodidacta, tengo facilidad para desenvolverme. Se gestionar mis emociones y los
                 pensamientos en el momento idóneo. Me considero una persona polivalente, multitarea y estoy habituado a trabajar bajo
                 presión. Tengo una asertividad y amabilidad constante, me considero una persona creativa e imaginativa capaz de explotar mis
