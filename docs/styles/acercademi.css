@@ -1,0 +1,41 @@
+.intro__{
+    margin-top: 50px;
+    margin-bottom: 1px;
+}
+.intro__ h1 {
+    display: inline;
+    background-color: rgb(89, 168, 194);
+    box-shadow: 10px 10px 0px rgb(100, 179, 206);
+    color:white;
+    line-height: 0px;
+    padding: 3px 10px 11px 10px;
+    margin-left:100px;
+    font-size: 4em;
+}
+.intro__ p{
+    font-size: 4em;
+    padding: 3px 10px 3px 10px;
+    margin-left: 100px;
+}
+.acercade__{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(89, 168, 194);
+}
+.acercade__acercademi{
+    background-color: white;
+    display: inline-block;
+    box-shadow: 10px 10px 0px rgb(235, 235, 235);
+    justify-content: center;
+    padding: 10px;
+    margin-left:100px;
+    margin-top: 60px;
+    border-radius: 2px;
+    font-size:2em;
+}
+.acercade__contenido p{
+    color: white;
+    padding: 2.7 8em;
+    font-size:1.7em;
+    text-align: justify;
+}

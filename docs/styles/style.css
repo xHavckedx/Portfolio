@@ -1,0 +1,29 @@
+*{
+    font-family: 'Sansita Swashed', cursive;
+    color: rgb(89, 168, 194);
+}
+.nav__{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.5em;
+}
+ ul{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+.nav__ li{
+    
+}
+.nav__ li, a{
+    list-style:none;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin:0 auto;
+}
+a:hover{
+    background-color:rgb(89, 168, 194);
+    color:white;
+    padding: 5px 12px;
+}

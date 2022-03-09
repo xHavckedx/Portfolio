@@ -1,0 +1,8 @@
+*{
+    font-family: 'Sansita Swashed', cursive;
+    color: rgb(89, 168, 194);
+}
+.nav__ li, a{
+    list-style: none;
+    color:blue;
+}
