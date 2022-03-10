@@ -15,14 +15,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 100px;
+    
+    margin: 100px auto;
 }
 .habilidades__container{
     display: flex;
     align-items:flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
-    min-width: 400px;
+    min-width: 365px;
     margin-bottom: 8em;
 }
 .habilidades__container-div{

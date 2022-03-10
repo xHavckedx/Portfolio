@@ -13,9 +13,7 @@
     justify-content:space-between;
     width: 100%;
 }
-.nav__ li{
-    
-}
+
 .nav__ li, a{
     list-style:none;
     padding: 5px 10px;
@@ -45,6 +43,7 @@ a:hover{
         background-color: rgb(89, 168, 194);
         position: sticky;
         top:0px;
+        height: 50px;
     }
 
     .navresponsivefix__ i{
@@ -53,9 +52,9 @@ a:hover{
         color: white;
         font-size: 1.5em;
         width: 10vw;
-        height: 30px;
+        height: 25px;
         margin-left: 85%;
-        margin-top: 8px;
+        margin-top: 12.5px;
     }
 
     .navresponsive__{
@@ -69,9 +68,10 @@ a:hover{
         background-color:rgb(89, 168, 194);
         z-index: 1;
         transition: all 1s;
+        margin-left:-10px;
     }
     .navresponsive__ nav{
-        margin:0;
+        margin-top:140px;
     }
     .navresponsive__ ul{
         display: inline;
@@ -80,10 +80,16 @@ a:hover{
         justify-content: center;
         align-items: center;
     }
-    .navresponsive__ li, a{
+    .navresponsive__ li{
+        margin: 0;
         z-index: 1;
         list-style: none;
         padding: 40px;
+        color: white;
+        border: 1px solid rgb(79, 148, 172);
+        margin:1px
+    }
+    .navresponsive__ a{
         color: white;
     }
     .navresponsive__ li a:hover{
