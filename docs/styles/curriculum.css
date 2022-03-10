@@ -25,7 +25,6 @@
 .curriculum__container-responsive{
     display: none;
     margin-top: 52px;
-    background-color: rgb(89, 168, 194);
     flex-direction: column;
     width: 50vw;
     height: 10vh;
@@ -33,7 +32,7 @@
 .curriculum__container-responsive i{
     padding: 0;
     font-size: 5em;
-    color: white;
+    color: rgb(89, 168, 194);
 }
 .curriculum__container a:hover{
     padding: 0;
@@ -65,5 +64,11 @@
     }
     .curriculum__container-responsive{
         display: flex;
+    }
+    .curriculum__container-responsive a:hover{
+        background-color: #f4f4f4;
+    }
+    .curriculum__container-responsive i:hover{
+        font-size: 6em;
     }
 }
