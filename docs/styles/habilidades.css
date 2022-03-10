@@ -70,6 +70,9 @@
 }
 
 @media  (max-width:700px) {
+    .habilidades__{
+        margin-bottom: 0;
+    }
     .habilidades__container{
         min-width: 90vw;
         flex-wrap: wrap;

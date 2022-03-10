@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="styles/acercademi.css">
         <link rel="stylesheet" href="styles/habilidades.css">
         <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/curriculum.css">
         <link rel="stylesheet" href="styles/contacto.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
                     <li><a href="#acercademi">Acerca de mi</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#">Currículum</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +37,7 @@
                     <li onclick="cerrarMenu()"><a href="#acercademi">Acerca de mi</a></li>
                     <li onclick="cerrarMenu()"><a href="#habilidades">Habilidades</a></li>
                     <li onclick="cerrarMenu()"><a href="#">Currículum</a></li>
-                    <li onclick="cerrarMenu()"><a href="#">Contacto</a></li>
+                    <li onclick="cerrarMenu()"><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -85,6 +86,18 @@
                     <img src="resources/sonyvegas.png">
                 </div>
         </div>
+        <div class="curriculum__">
+            <div class="curriculum__container">
+                <p>Mi currículum actualizado está en esta carpeta</p>
+                <a href="resources/CV_LeoGomezCano_Lite" download="CV_LeoGomezCano_Lite.pdf"><i class="fa-solid fa-folder-plus"></i></a>
+            </div>
+            <div class="curriculum__tarjeta">
+                <div class="curriculum__tarjeta-hijo">Currículum</div>
+            </div>
+            <div class="curriculum__container-responsive">
+                <a href="resources/CV_LeoGomezCano_Lite" download="CV_LeoGomezCano_Lite.pdf"><i class="fa-solid fa-folder-plus"></i></a>
+            </div>
+        </div>
         <div class="contacto__">
             <div class="contacto__tarjeta">Contactame</div>
             <div class="contacto__container">
@@ -106,6 +119,7 @@
         </div>
     </body>
     <footer>
+        <div id="contacto"></div>
         <div class="footer__">
             <div class="footer__div">
                 <a href="https://discord.gg/7Aecr3tM2a" target="_blank"><i class="fa-brands fa-discord"></i></a>
