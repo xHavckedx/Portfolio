@@ -103,28 +103,27 @@
                 <a href="https://github.com/xHavckedx/Portfolio/raw/main/docs/resources/CV_LeoGomezCano_Lite.pdf"><i class="fa-solid fa-folder-plus"></i></a>
             </div>
         </div>
-        <div class="contacto__">
+        <div id="contacto" class="contacto__">
             <div class="contacto__tarjeta">Contáctame</div>
             <div class="contacto__container">
-                <form action="https://formsubmit.co/el/sahofe" method="POST">
+                <form><!--action="https://formsubmit.co/el/sahofe" method="POST"-->
                     <div class="contacto__container-header">
                         <input class="contacto__formulario-input" type="text" name="_subject" placeholder="Inserte el asunto" required>
                         <div class="contacto__container-header-separator"></div>
                         <input class="contacto__formulario-input" type="_replyto" name="email" placeholder="Inserte su email"required>
                     </div>
                     <div class="contacto__container-body">
-                        <textarea name="message" placeholder="Inserte el texto"></textarea>
+                        <textarea class="contacto__formulario-input" name="message" placeholder="Inserte el texto"></textarea>
                     </div>
                     <div class="contacto__container-footer">
-                        <input class="contacto__formulario-input" type="submit"required>
+                        <input type="submit" onclick="formulario()">
                     </div>
-                    <input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, lo hemos recibido.">
+                    <!--<input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, lo hemos recibido.">-->
                 </form>
             </div>
         </div>
     </body>
     <footer>
-        <div id="contacto"></div>
         <div class="footer__">
             <div class="footer__div">
                 <a href="https://discord.gg/7Aecr3tM2a" target="_blank"><i class="fa-brands fa-discord"></i></a>
