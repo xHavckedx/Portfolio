@@ -1,20 +1,22 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Portfolio Leo Gómez Cano</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="javascript/app.js"></script>
+        <script src="javascript/form.js"></script>
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/acercademi.css">
         <link rel="stylesheet" href="styles/habilidades.css">
         <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/contacto.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2ac5134df5.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body onload="form()">
         <div class="nav__">
             <nav>
                 <ul>
@@ -82,6 +84,25 @@
                     <img src="resources/photoshop.png">
                     <img src="resources/sonyvegas.png">
                 </div>
+        </div>
+        <div class="contacto__">
+            <div class="contacto__tarjeta">Contactame</div>
+            <div class="contacto__container">
+                <form action="https://formsubmit.co/el/sahofe" method="POST">
+                    <div class="contacto__container-header">
+                        <input class="contacto__formulario-input" type="text" name="_subject" placeholder="Inserte el asunto" required>
+                        <div class="contacto__container-header-separator"></div>
+                        <input class="contacto__formulario-input" type="_replyto" name="email" placeholder="Inserte su email"required>
+                    </div>
+                    <div class="contacto__container-body">
+                        <textarea name="message" placeholder="Inserte el texto"></textarea>
+                    </div>
+                    <div class="contacto__container-footer">
+                        <input class="contacto__formulario-input" type="submit"required>
+                    </div>
+                    <input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, lo hemos recibido.">
+                </form>
+            </div>
         </div>
     </body>
     <footer>

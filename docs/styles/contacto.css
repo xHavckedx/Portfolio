@@ -1,0 +1,78 @@
+.contacto__{
+    display: block;
+    text-align: center;
+    background-color: rgb(89, 168, 194);
+}
+.contacto__tarjeta{
+    background-color: white;
+    display: inline-block;
+    box-shadow: 10px 10px 0px rgb(235, 235, 235);
+    justify-content: center;
+    padding: 10px;
+    border-radius: 2px;
+    font-size:2em;
+    margin: 1em 0 1em 0;
+}
+.contacto__container-header{
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+.contacto__container-header input{
+    color: black;
+    font-size: 1.4em;
+    padding: 4px;
+    height: 3em;
+    width: 15em;
+}
+.contacto__container-header-separator{
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.contacto__container-body{
+    padding-bottom: 3em;
+}
+.contacto__container-body textarea{
+    color: black;
+    padding: 4px;
+    font-size: 1.4em;
+    width: 31em;
+    height: 11em;
+}
+.contacto__container-footer{
+    padding-bottom: 3em;
+}
+.contacto__container-footer input{
+    font-size: 1.4em;
+    background-color: white;
+    border: 1px solid black;
+    width: 15em;
+    height: 4em;
+    transition: background-color .5s, color 0s;
+}
+.contacto__container-footer input:hover{
+    background-color: rgb(89, 168, 194);
+    color: white;
+    border: white 1px solid;
+    transition: 1s;
+}
+@media (max-width:700px){
+    .contacto__container-header{
+       
+    }
+    .contacto__container-header input{
+        font-size: 1em;
+        width: 10em;
+    }
+    .contacto__container-body{
+       
+    }
+    .contacto__container-body textarea{
+        font-size: 1em;
+        width: 22em;
+    }
+    .contacto__container-footer input{
+        width: 7em;
+        height: 2em;
+    }
+}
