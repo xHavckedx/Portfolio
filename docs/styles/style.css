@@ -1,5 +1,5 @@
 *{
-    font-family: 'Sansita Swashed', cursive;
+    font-family:  'Roboto Serif', serif;
     color: rgb(89, 168, 194);
 }
 .nav__{
@@ -23,7 +23,6 @@
 a:hover{
     background-color:rgb(89, 168, 194);
     color:white;
-    padding: 5px 12px;
 }
 .navresponsivefix__ i{
     display: none;

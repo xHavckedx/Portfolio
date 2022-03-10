@@ -8,13 +8,13 @@
     box-shadow: 10px 10px 0px rgb(100, 179, 206);
     color:white;
     line-height: 0px;
-    padding: 3px 10px 11px 10px;
+    padding: 10px 10px 10px 10px;
     margin-left:100px;
     font-size: 4em;
 }
 .intro__ p{
     font-size: 4em;
-    padding: 3px 10px 3px 10px;
+    padding: 10px 10px 10px 10px;
     margin-left: 100px;
 }
 .acercade__{
@@ -32,11 +32,15 @@
     border-radius: 2px;
     font-size:2em;
 }
+.acercade__contenido{
+    padding-bottom: 2em;
+}
 .acercade__contenido p{
     color: white;
     padding: 1.5em 3em 1.5em 3em;
     font-size:1.7em;
     text-align: justify;
+    line-height: 1.5em;
 }
 @media (max-width:700px){
 
