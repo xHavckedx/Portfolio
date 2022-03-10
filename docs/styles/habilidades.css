@@ -1,6 +1,6 @@
 .tarjeta__{
     text-align: center;
-    margin-top: 2em;
+    margin-top: 5em;
 }
 .tarjeta__hijo{
     display: inline;
@@ -15,15 +15,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-    margin: 100px auto;
+    margin:100px auto;
 }
 .habilidades__container{
     display: flex;
     align-items:flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
-    min-width: 365px;
+    min-width: 455px;
     margin-bottom: 8em;
 }
 .habilidades__container-div{
@@ -68,4 +67,10 @@
     color:white;
     padding: 3px 10px 11px 10px;
     font-size: 2.2em;
+}
+
+@media  (max-width:700px) {
+    .habilidades__container{
+        min-width: 360px;
+    }
 }

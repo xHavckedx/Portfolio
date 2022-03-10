@@ -1,0 +1,30 @@
+body{
+    margin:0;
+}
+footer{
+    margin:0;
+}
+.footer__{
+    display: block;
+    background-color: rgb(89, 168, 194);
+    height: 80px;
+}
+.footer__div{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__div i{
+    padding: 15px 50px 15px 50px;
+    font-size: 40px;
+    color:white;
+}
+.footer__div a{
+    height: 70px;
+}
+
+@media (max-width:700px) {
+    .footer__div i{
+        padding: 20px;
+        font-size: 2.2em;
+    }
+}
