@@ -39,6 +39,7 @@
     font-size: 1.4em;
     width: 31em;
     height: 11em;
+    resize: none;
 }
 .contacto__container-footer{
     padding-bottom: 3em;
@@ -65,6 +66,7 @@
     .contacto__container-body textarea{
         font-size: 1em;
         width: 19em;
+        resize: none;
     }
     .contacto__container-footer input{
         width: 7em;
