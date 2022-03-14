@@ -2,6 +2,21 @@
     font-family:  'Roboto Serif', serif;
     color: rgb(89, 168, 194);
 }
+span{
+    background: #ffffff59;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .2s;
+    border-radius: 10%;
+    transform: scale(1.2);
+}
+span:hover{
+    opacity: 1;
+}
 .nav__{
     display: flex;
     justify-content: space-around;

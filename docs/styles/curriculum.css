@@ -20,13 +20,10 @@
     font-size: 5em;
     color: white;
     margin:-5px;
+    display: inline-block;
+    position: relative;
 }
-.curriculum__container i:hover{
-    border-radius: 10px;
-    background-color: rgba(248, 248, 248, 0.274);
-    padding: 10px;
-    text-align: center;
-}
+
 .curriculum__container-responsive{
     display: none;
     margin-top: 52px;

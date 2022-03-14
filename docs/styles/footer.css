@@ -18,6 +18,8 @@ footer{
     padding: 15px 50px 15px 50px;
     font-size: 40px;
     color:white;
+    display: inline-block;
+    position: relative;
 }
 .footer__div a{
     height: 70px;
