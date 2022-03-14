@@ -19,8 +19,7 @@ function vermas(a){
         boton1.classList.toggle('habilidades__container-p-open')
         if(boton1.classList.contains('habilidades__container-p-open')){
             texto[0].textContent = 'Mostrar menos'
-        }
-        if(!boton1.classList.contains('habilidades__container-p-open')){
+        }else{
             texto[0].textContent = 'Ver más'
         }
     }
@@ -29,8 +28,7 @@ function vermas(a){
         boton2.classList.toggle('habilidades__container-p-open')
         if(boton2.classList.contains('habilidades__container-p-open')){
             texto[1].textContent = 'Mostrar menos'
-        }
-        if(!boton2.classList.contains('habilidades__container-p-open')){
+        }else{
             texto[1].textContent = 'Ver más'
         }
     }
@@ -39,8 +37,7 @@ function vermas(a){
         boton3.classList.toggle('habilidades__container-p-open')
         if(boton3.classList.contains('habilidades__container-p-open')){
             texto[2].textContent = 'Mostrar menos'
-        }
-        if(!boton3.classList.contains('habilidades__container-p-open')){
+        }else{
             texto[2].textContent = 'Ver más'
         }
     }
