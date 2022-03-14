@@ -63,6 +63,8 @@
     display: block;
 }
 .habilidades__container-p-open p{
+    display: inline-block;
+    width: 70%;
     color: rgb(55, 102, 117);
     line-height: 1.5em;
     font-size: 1.4em;
