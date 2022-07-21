@@ -1,2 +1,2 @@
 # Portfolio
-Portfolio de Leo Gómez Cano, para corrobar mi experiencia como programador.
+Portfolio de Leo Gómez Cano, página web donde explico un poco de quien soy.
