@@ -21,6 +21,20 @@ footer{
     display: inline-block;
     position: relative;
 }
+
+.footer__div i:hover{
+    background: #ffffff59;
+    /* position: fixed; */
+    /* top: 0; */
+    /* right: 0; */
+    /* left: 0; */
+    /* bottom: 0; */
+    opacity: 1;
+    transition: opacity .2s;
+    border-radius: 10%;
+    transform: scale(1.2);
+}
+
 .footer__div a{
     height: 70px;
 }

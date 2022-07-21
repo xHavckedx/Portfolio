@@ -2,7 +2,7 @@
     font-family:  'Roboto Serif', serif;
     color: rgb(89, 168, 194);
 }
-span{
+/*span{
     background: #ffffff59;
     position: absolute;
     top: 0;
@@ -16,7 +16,7 @@ span{
 }
 span:hover{
     opacity: 1;
-}
+}*/
 .nav__{
     display: flex;
     justify-content: space-around;
