@@ -5,8 +5,10 @@
         <title>Portfolio Leo Gómez Cano</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="javascript/app.js"></script>
+        <script src="javascript/loader.js"></script>
         <script src="javascript/form.js"></script>
         <link rel="icon" href="resources/ico.png">
+        <link rel="stylesheet" href="styles/inicio.css">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/acercademi.css">
         <link rel="stylesheet" href="styles/habilidades.css">
@@ -18,132 +20,146 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2ac5134df5.js" crossorigin="anonymous"></script>
     </head>
-    <body onload="form()">
+    <div id="_target">
+        <p>
+            ¿Te comprometes a mantener la confidencialidad de los archivos
+            presentes, a la no divulgación de los archivos y tampoco al uso
+            indebido de los mismos?.
+        </p>
+        <br>
+        <div>
+            <button onclick="fncAccept()">Acepto</button>
+            <button onclick="fncExit()">Rechazo</button>
+        </div>
+    </div>
+    <div id="window">
+        <body>
         <div class="nav__">
-            <nav>
-                <ul>
-                    <li><a href="#acercademi">A cerca de mi</a></li>
-                    <li><a href="#habilidades">Conocimientos</a></li>
-                    <li><a href="#curriculum">Currículum</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="navresponsivefix__">
-                <i id="navresponsive__ico" class="fa-solid fa-bars" onclick="abrirMenu()"></i>
-        </div>
-        <div id="navresponsive__" class="navresponsive__">
-            <nav>
-                <ul>
-                    <li onclick="cerrarMenu()"><a href="#acercademi">A cerca de mi</a></li>
-                    <li onclick="cerrarMenu()"><a href="#habilidades">Conocimientos</a></li>
-                    <li onclick="cerrarMenu()"><a href="#curriculum">Currículum</a></li>
-                    <li onclick="cerrarMenu()"><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        <div class="intro__">
-            <p>Me llamo</p>
-            <h1>Leo Gómez Cano </h1>
-            <p>Y soy programador</p>  
-        </div>
-        <div id="acercademi"></div>
-        <div class="acercade__">
-            <div class="acercade__acercademi">A cerca de mi</div>
-            <div class="acercade__contenido"><p>
-                Soy un chico joven, dinámico y autodidacta, me encantan las tecnologías. Mi principal pasión es
-                la informática donde destaco en la programación y las redes también dispongo de concocimientos
-                en ciberseguridad. <br> Actualmente tengo un GM en sistemas microinformáticos y un GS
-                en desarrollo de aplicaciones multiplataforma, puedo programar con soltura en los siguientes 
-                lenguajes de programación: Java, JavaScript, SQL, PHP, HTML, CSS. Pero me adapto muy rápido a 
-                cualquier lenguaje, tengo experiencia en lógica de programación. En cuanto a redes
-                puedo montar todo tipo de servidores como: DNS, Proxy, Active Directory, VPN,
-                máquinas virtuales, etc... También cuento con las nociones de los diferentes SO,
-                como por ejemplo Linux, windows, MacOS y todo su paquete ofimático.
-                </p>
+                <nav>
+                    <ul>
+                        <li><a href="#acercademi">A cerca de mi</a></li>
+                        <li><a href="#habilidades">Conocimientos</a></li>
+                        <li><a href="#curriculum">Currículum</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-        <div id="habilidades"></div>
-        <div class="tarjeta__"><div class="tarjeta__hijo">Conocimientos</div></div>
-        <div class="habilidades__">
-                <div class="habilidades__container">
-                    <div class="habilidades__container-div">
-                        <div class="habilidades__title-div">Frontend</div>
-                    </div>
-                    <div class="habilidades__container-imagendiv">
-                        <img src="resources/html5.png">
-                        <img src="resources/css3.png">
-                        <img src="resources/js.png">
-                    </div>
-                    <div id="frontp1" class="habilidades__container-p"><p>Las habilidades frontend te permiten crear un diseño estructurado de una página web, cuanto mayor sea este conocimiento más posibilidades puedes crear.</p></div>
-                    <div class="habilidades__container-divfooter" onclick="vermas(0)">Ver más</div>
+            <div class="navresponsivefix__">
+                    <i id="navresponsive__ico" class="fa-solid fa-bars" onclick="abrirMenu()"></i>
+            </div>
+            <div id="navresponsive__" class="navresponsive__">
+                <nav>
+                    <ul>
+                        <li onclick="cerrarMenu()"><a href="#acercademi">A cerca de mi</a></li>
+                        <li onclick="cerrarMenu()"><a href="#habilidades">Conocimientos</a></li>
+                        <li onclick="cerrarMenu()"><a href="#curriculum">Currículum</a></li>
+                        <li onclick="cerrarMenu()"><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="intro__">
+                <p>Me llamo</p>
+                <h1>Leo Gómez Cano </h1>
+                <p>Y soy programador</p>  
+            </div>
+            <div id="acercademi"></div>
+            <div class="acercade__">
+                <div class="acercade__acercademi">A cerca de mi</div>
+                <div class="acercade__contenido"><p>
+                    Soy un chico joven, dinámico y autodidacta, me encantan las tecnologías. Mi principal pasión es
+                    la informática donde destaco en la programación y las redes también dispongo de concocimientos
+                    en ciberseguridad. <br> Actualmente tengo un GM en sistemas microinformáticos y un GS
+                    en desarrollo de aplicaciones multiplataforma, puedo programar con soltura en los siguientes 
+                    lenguajes de programación: Java, JavaScript, SQL, PHP, HTML, CSS. Pero me adapto muy rápido a 
+                    cualquier lenguaje, tengo experiencia en lógica de programación. En cuanto a redes
+                    puedo montar todo tipo de servidores como: DNS, Proxy, Active Directory, VPN,
+                    máquinas virtuales, etc... También cuento con las nociones de los diferentes SO,
+                    como por ejemplo Linux, windows, MacOS y todo su paquete ofimático.
+                    </p>
                 </div>
-                <div class="habilidades__container">
-                    <div class="habilidades__container-div">
-                        <div class="habilidades__title-div">Backend</div>
+            </div>
+            <div id="habilidades"></div>
+            <div class="tarjeta__"><div class="tarjeta__hijo">Conocimientos</div></div>
+            <div class="habilidades__">
+                    <div class="habilidades__container">
+                        <div class="habilidades__container-div">
+                            <div class="habilidades__title-div">Frontend</div>
+                        </div>
+                        <div class="habilidades__container-imagendiv">
+                            <img src="resources/html5.png">
+                            <img src="resources/css3.png">
+                            <img src="resources/js.png">
+                        </div>
+                        <div id="frontp1" class="habilidades__container-p"><p>Las habilidades frontend te permiten crear un diseño estructurado de una página web, cuanto mayor sea este conocimiento más posibilidades puedes crear.</p></div>
+                        <div class="habilidades__container-divfooter" onclick="vermas(0)">Ver más</div>
                     </div>
-                    <div class="habilidades__container-imagendiv">
-                        <img src="resources/php.png">
-                        <img src="resources/java.png">
-                        <img src="resources/mysql.png">
+                    <div class="habilidades__container">
+                        <div class="habilidades__container-div">
+                            <div class="habilidades__title-div">Backend</div>
+                        </div>
+                        <div class="habilidades__container-imagendiv">
+                            <img src="resources/php.png">
+                            <img src="resources/java.png">
+                            <img src="resources/mysql.png">
+                        </div>
+                        <div id="frontp2" class="habilidades__container-p"><p>Las habilidades backend son las habilidades que nos permiten operar de forma lógica entre el frontend y una base de datos.</p></div>
+                        <div class="habilidades__container-divfooter" onclick="vermas(1)">Ver más</div>
                     </div>
-                    <div id="frontp2" class="habilidades__container-p"><p>Las habilidades backend son las habilidades que nos permiten operar de forma lógica entre el frontend y una base de datos.</p></div>
-                    <div class="habilidades__container-divfooter" onclick="vermas(1)">Ver más</div>
+                    <div class="habilidades__container">
+                        <div class="habilidades__container-div">
+                            <div class="habilidades__title-div">Diseño</div>
+                        </div>
+                        <div class="habilidades__container-imagendiv">
+                            <img src="resources/photoshop.png">
+                            <img src="resources/sonyvegas.png">
+                        </div>
+                        <div id="frontp3" class="habilidades__container-p"><p>Las habilidades de diseño, te permiten ser bastante dinámico a la hora de trabajar, te permite crear contenido rápido en caso de que fuera necesario.</p></div>
+                        <div class="habilidades__container-divfooter" onclick="vermas(2)">Ver más</div>
+                    </div>
+            </div>
+            <div id="curriculum"></div>
+            <div class="curriculum__">
+                <div class="curriculum__container">
+                    <p>Mi currículum actualizado está en esta carpeta</p>
+                    <a href="https://github.com/xHavckedx/Portfolio/raw/main/docs/resources/CV_LeoGomezCano_Lite.pdf"><i class="fa-solid fa-folder-plus"><span></span></i></a>
                 </div>
-                <div class="habilidades__container">
-                    <div class="habilidades__container-div">
-                        <div class="habilidades__title-div">Diseño</div>
-                    </div>
-                    <div class="habilidades__container-imagendiv">
-                        <img src="resources/photoshop.png">
-                        <img src="resources/sonyvegas.png">
-                    </div>
-                    <div id="frontp3" class="habilidades__container-p"><p>Las habilidades de diseño, te permiten ser bastante dinámico a la hora de trabajar, te permite crear contenido rápido en caso de que fuera necesario.</p></div>
-                    <div class="habilidades__container-divfooter" onclick="vermas(2)">Ver más</div>
+                <div class="curriculum__tarjeta">
+                    <div class="curriculum__tarjeta-hijo">Currículum</div>
                 </div>
-        </div>
-        <div id="curriculum"></div>
-        <div class="curriculum__">
-            <div class="curriculum__container">
-                <p>Mi currículum actualizado está en esta carpeta</p>
-                <a href="https://github.com/xHavckedx/Portfolio/raw/main/docs/resources/CV_LeoGomezCano_Lite.pdf"><i class="fa-solid fa-folder-plus"><span></span></i></a>
+                <div class="curriculum__container-responsive">
+                    <a href="https://github.com/xHavckedx/Portfolio/blob/main/docs/resources/CV_LeoGomezCano_Lite.pdf"><i class="fa-solid fa-folder-plus"></i></a>
+                </div>
             </div>
-            <div class="curriculum__tarjeta">
-                <div class="curriculum__tarjeta-hijo">Currículum</div>
+            <div id="contacto" class="contacto__">
+                <div class="contacto__tarjeta">Contáctame</div>
+                <div class="contacto__container">
+                    <form action="docs/backend/form.php" method="post"><!--action="https://formsubmit.co/el/sahofe" method="POST"-->
+                        <div class="contacto__container-header">
+                            <input class="contacto__formulario-input" type="text" name="_subject" placeholder="Inserte el asunto" required>
+                            <div class="contacto__container-header-separator"></div>
+                            <input class="contacto__formulario-input" type="_replyto" name="email" placeholder="Inserte su email"required>
+                        </div>
+                        <div class="contacto__container-body">
+                            <textarea class="contacto__formulario-input" name="message" placeholder="Inserte el texto"></textarea>
+                        </div>
+                        <div class="contacto__container-footer">
+                            <input type="submit" onclick="formulario()">
+                        </div>
+                        <!--<input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, lo hemos recibido.">-->
+                    </form>
+                </div>
             </div>
-            <div class="curriculum__container-responsive">
-                <a href="https://github.com/xHavckedx/Portfolio/blob/main/docs/resources/CV_LeoGomezCano_Lite.pdf"><i class="fa-solid fa-folder-plus"></i></a>
+        </body>
+        <footer>
+            <div class="footer__">
+                <div class="footer__div">
+                    <a href="https://discord.gg/7Aecr3tM2a" target="_blank"><i class="fa-brands fa-discord"><span></span></i></a>
+                    <a href="https://github.com/xhavckedx" target="_blank"><i class="fa-brands fa-github"><span></span></i></a>
+                    <a href="https://wa.me/+34652309987/?text=Buenos%20dias,%20he%20visto%20tu%20portfolio%20y%20estoy%20interesado" target="_blank"><i class="fa-brands fa-whatsapp"><span></span></i></a>
+                    <a href="https://www.linkedin.com/in/leogomezcano/" target="_blank"><i class="fa-brands fa-linkedin-in"><span></span></i></a>
+                </div>
             </div>
-        </div>
-        <div id="contacto" class="contacto__">
-            <div class="contacto__tarjeta">Contáctame</div>
-            <div class="contacto__container">
-                <form action="docs/backend/form.php" method="post"><!--action="https://formsubmit.co/el/sahofe" method="POST"-->
-                    <div class="contacto__container-header">
-                        <input class="contacto__formulario-input" type="text" name="_subject" placeholder="Inserte el asunto" required>
-                        <div class="contacto__container-header-separator"></div>
-                        <input class="contacto__formulario-input" type="_replyto" name="email" placeholder="Inserte su email"required>
-                    </div>
-                    <div class="contacto__container-body">
-                        <textarea class="contacto__formulario-input" name="message" placeholder="Inserte el texto"></textarea>
-                    </div>
-                    <div class="contacto__container-footer">
-                        <input type="submit" onclick="formulario()">
-                    </div>
-                    <!--<input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, lo hemos recibido.">-->
-                </form>
-            </div>
-        </div>
-    </body>
-    <footer>
-        <div class="footer__">
-            <div class="footer__div">
-                <a href="https://discord.gg/7Aecr3tM2a" target="_blank"><i class="fa-brands fa-discord"><span></span></i></a>
-                <a href="https://github.com/xhavckedx" target="_blank"><i class="fa-brands fa-github"><span></span></i></a>
-                <a href="https://wa.me/+34652309987/?text=Buenos%20dias,%20he%20visto%20tu%20portfolio%20y%20estoy%20interesado" target="_blank"><i class="fa-brands fa-whatsapp"><span></span></i></a>
-                <a href="https://www.linkedin.com/in/leogomezcano/" target="_blank"><i class="fa-brands fa-linkedin-in"><span></span></i></a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </html>

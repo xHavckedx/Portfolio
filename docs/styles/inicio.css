@@ -1,0 +1,26 @@
+#window{
+    display: none;
+}
+
+#_target{
+    font-weight: bold;
+    background-color: white;
+    display: block;
+    position: fixed;
+    text-align:center;
+    bottom: 10px;
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 1px gray;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#_target button{
+    padding: 6px;
+    margin: 10px;
+    background-color: rgb(89, 168, 194);
+    color: white;
+    border: none;
+}
